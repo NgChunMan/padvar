@@ -6,7 +6,7 @@
 ## Installation
 To install the **padvar** package, execute the following command on Stata:
 ```stata
-net install padvar, from(https://your-repo-link)
+net install padvar, from([https://your-repo-link](https://raw.githubusercontent.com/NgChunMan/padvar/main/))
 ```
 
 ## Notes
