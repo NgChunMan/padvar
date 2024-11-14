@@ -36,10 +36,11 @@ padvar var1 var2, generate(new_var) padvalue(X)
 ```
 
 ### Example 3: Conditional Padding
-Pad variables with a condition applied to a subset of data.
+Pad `var1` and `var2` only for observations where `var3` (e.g., year) equals 2024:
 ```stata
 padvar var1 var2 if var3 == 2024, generate(new_var)
 ```
+In this example, `var3` could be a variable representing a year or any condition that subsets the data to be padded.
 
 ## Details
 1. **Supported Variable Types**: `padvar` only processes variables of type string, byte, integer, long, and float. If a variable is not one of these types, an error will be displayed.
