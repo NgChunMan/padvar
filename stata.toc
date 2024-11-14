@@ -1,0 +1,7 @@
+pkgname: padvar
+version: 1.0.0
+description: padvar is a Stata package designed to standardize the length of string and numeric variables by padding and concatenating them into a single new variable. This utility is useful for data cleaning and preparation, ensuring uniform formatting of variables.
+
+files:
+    padvar.ado
+    padvar.sthlp
