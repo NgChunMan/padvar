@@ -173,7 +173,7 @@ Next, open Stata and set your working directory to the `padvar` folder where the
    ```stata
    padvar year_1990 if !missing(year_1990), gen(gdp_1990_pad)
    ```
-   - **Expected Output**: Successful padding for each float variable.
+   - **Expected Output**: Successful padding for each float variable with standardised decimal points.
 
 ## License
 This project is licensed under the MIT License.
