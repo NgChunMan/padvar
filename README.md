@@ -105,9 +105,10 @@ Next, open Stata and set your working directory to the `padvar` folder where the
    padvar code_dep code_arr com_abs, gen(municipality_code_2) padvalue("0")
    ```
 
-6. Replace the values of `municipality_code` with `municipality_code_2` if `municipality_code` is empty.
+6. Replace the values of `municipality_code` with `municipality_code_2` if `municipality_code` is empty and drop `municipality_code_2`. 
    ```stata
    replace municipality_code = municipality_code_2 if municipality_code == ""
+   drop municipality_code_2
    ```
    This ensures that any empty `municipality_code` values are filled with the corresponding value from `municipality_code_2`.
 
