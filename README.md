@@ -73,7 +73,7 @@ In this example, `var3` could be a variable representing a year or any condition
 
 First, download the `padvar` zip folder and unzip it. Inside the unzipped folder, there is a subfolder named `data` which contains three datasets that will be used for testing. 
 
-Then, open Stata and change your working directory to the `padvar` folder where the `data` subfolder is located. Execute the commands below to test the `padvar` command.
+Next, open Stata and set your working directory to the `padvar` folder where the `data` subfolder is located. Then, execute the commands below to test the `padvar` command.
 
 ### Test 1: To Test String Variables
 
@@ -126,6 +126,12 @@ Then, open Stata and change your working directory to the `padvar` folder where 
    padvar sex, gen(sex_pad)
    ```
    - **Expected Output**: Stata displays: "All values in the variable sex are the same length. No padding is needed for this variable."
+
+3. Test padding for the byte variable `sex`.
+   ```stata
+   padvar regionbr, gen(sex_pad) pad("00")
+   ```
+   - **Expected Output**: Stata displays: "Error: PADvalue must be a single character or single digit."
 
 3. Test padding for `regionbr`, ensuring no missing values are considered.
    ```stata
