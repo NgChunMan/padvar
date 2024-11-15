@@ -1,9 +1,11 @@
 *! version 1.0.0 14 Nov 2024
-package padvar
-version 1.0
-description("padvar takes in either a single variable or a varlist, standardizes the length of each specified variable by padding them with a chosen character or digit, and concatenates the padded results to create a new variable.")
+padvar: package to pad and concatenate variables to standardized format
+version 1.0.0
+padvar takes in either a single variable or a varlist, standardizes the length of each
+specified variable by padding them with a chosen character or digit, and concatenates
+the padded results to create a new variable, newvar.  padvar supports only string, byte,
+integer, long and float data types, ensuring that each input variable has a consistent
+length and combines them seamlessly into one output variable.
 f padvar.ado
 f padvar.sthlp
 f stata.toc
-cap which padvar
-display as text "padvar installed successfully."
